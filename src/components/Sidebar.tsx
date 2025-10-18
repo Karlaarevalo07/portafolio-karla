@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom'
-import { FiBookOpen, FiHome, FiList } from 'react-icons/fi'
+import { FiHome } from "react-icons/fi";
 import { FiUser } from "react-icons/fi"; 
+import { FiAward } from "react-icons/fi";
+import { FiList } from "react-icons/fi";
 
 const item =
   'flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors'
@@ -12,15 +14,15 @@ export default function Sidebar() {
         <NavLink to="/" className={item}>
           <FiHome /> Inicio
         </NavLink>
-        <NavLink to="/glosario" className={item}>
-          <FiBookOpen /> Glosario
-        </NavLink>
         <NavLink to="/tareas" className={item}>
           <FiList /> Tareas
         </NavLink>
-<NavLink to="/sobre-mi" className={item}>
-  <FiUser /> Sobre mí
-</NavLink>
+        <NavLink to="/sobre-mi" className={item}>
+          <FiUser /> Sobre mí
+        </NavLink>
+        <NavLink to="/certificaciones" className={item}>
+          <FiAward /> Certificaciones
+        </NavLink>
       </div>
       
 
